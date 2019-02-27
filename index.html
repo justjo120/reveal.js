@@ -1,42 +1,104 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/league.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Software Developer</section>
-				<section>Educational Path
-					<section>Computer Science Degree</section>
-					<section>Coding Bootcamp</section>
-					<section>Self Taught</section>
-				</section>
-				<section>Expected Wages</section>
-				<section>Growth Path
-					<section>Software Developer (Frontend or Backend) > Senior Software Developer > Team Lead</section>
-					<section>Software Developer w/Design > UX Engineer/ Front End Developer</section>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-transition="convex">
+				<h1>Software Developer</h1>
 			</section>
-				<section>Future Outlook</section>
-				<section>Johanna Klay: Me : Dev</section>
+			<section>
+				<h2>Johanna Klay</h2>
+				<section>
+					<h4>Who am I? How'd I'd get here?</h4>
+				</section>
+
+				<section>Politics/Government</section>
+				<section>Digital Marketing </section>
+				<section>Self Taught Software Developer</section>
+			</section>
+			<section data-transition="slide">
+				<h2>Educational Path To Developer</h2>
+				<section>
+					
+						<table>
+							<tr>
+								<td>CS Degree</td>
+								<td>Bootcamp</td>
+								<td>Self Taught</td>
+							</tr>
+							<tr>
+								<td>$80,000-$160,000*</td>
+								<td>$12,000</td>
+								<td>$0-?</td>
+							</tr>
+							<tr>
+								<td>Four Years</td>
+								<td>3-12 Months</td>
+								<td>Dependent on person</td>
+							</tr>
+						</table></section>
+			</section>
+			<section>
+				<h2>Expected Wages</h2>
+				<section>
+					
+				<table>
+					<tr>
+						<td>Starting</td>
+						<td>$68K</td>
+					</tr>
+					<tr>
+						<td>Mid</td>
+						<td>$80,000</td>
+					</tr>
+					<tr>
+						<td>Senior/Lead</td>
+						<td>$100,000-200,000</td>
+					</tr>
+				</table></section>
+			</section>
+			<section data-transition="slide"><h2>Areas of Focus</h2>
+				<section>Backend Vs Frontend <br><img data-src="https://i2.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/04/restaurantfebe1.png?resize=730%2C286&ssl=1"></section>
+				<section>Backend<br><img data-src="https://i1.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/04/servervkitchen.png?resize=730%2C346&ssl=1"></section>
+				<section>FrontEnd<br><img data-src="https://i2.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/04/choosingmealjavascript.png?resize=730%2C458&ssl=1"></section>
+				<section>FullStack<br><img data-src="https://i2.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/04/fullfrontendbackendsummary.png?resize=730%2C407&ssl=1"></section>
+			</section>
+			<section data-transition="convex">
+				<h2>Future Outlook</h2>
+				<section>
+				<img data-src="https://www.computerscienceonline.org/wp-content/themes/computerScience/images/Major-new-design/software-developer-1.png">
+				<small>https://www.computerscienceonline.org/software-engineering/</small></section>
+			</section>
+			<section data-transition="convex">
+				<h2>Questions?</h2>
+			</section>
+			<section data-transition="fade">
+				<h1>Thanks!</h1>
+			</section>
+
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -47,13 +109,26 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				dependencies: [{
+						src: 'plugin/markdown/marked.js'
+					},
+					{
+						src: 'plugin/markdown/markdown.js'
+					},
+					{
+						src: 'plugin/notes/notes.js',
+						async: true
+					},
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						callback: function () {
+							hljs.initHighlightingOnLoad();
+						}
+					}
 				]
 			});
 		</script>
-	</body>
+</body>
+
 </html>
